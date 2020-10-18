@@ -1,0 +1,26 @@
+
+<h1 class="text-center">Create Advert</h1>
+<div class ="container mx-auto text-center formo formbuttonz containerborder col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<form>
+<label>Make</label>
+<input type="text" name="make" class="form-control" placeholder="Enter Make" #make>
+
+<label>Model</label>
+<input type="text" name="model" class="form-control" placeholder="Enter Model" #model>
+
+<label>Image</label>
+<input type="text" name="imageURL" class="form-control" placeholder="Enter Link to Image" #imageURL>
+
+<label>Price</label>
+<input type="text" name="price" class="form-control" placeholder="Enter Price" #price>
+<br>
+<button type="submit" class="btn btn-primary" (click)="addTheCar(make.value, model.value, imageURL.value, price.value)">CREATE ADVERT</button>
+
+</form>
+<br>
+</div>
+
+    <div class="container" *ngIf="carsData">
+
+        <app-car *ngFor="let carData of carsData" [carData]="carData"></app-car>    
+        </div>

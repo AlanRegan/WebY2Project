@@ -1,0 +1,116 @@
+<br>
+<br>
+<h1 class="text-center mx-auto">AutoVendor</h1>
+<div class="container text-center mx-auto noborder">
+  
+  <form>
+<br>
+    <div class="row justify-content-center col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <input type='text' name="car-make" class="form-control lol" #carmake placeholder="ENTER MAKE">&nbsp;&nbsp;&nbsp;
+    <input type='text' name="car-model" class="form-control lol" #carmodel placeholder="ENTER MODEL">&nbsp;&nbsp;&nbsp;
+    <button (click)="getCarDetails(carmake.value, carmodel.value)" type="submit" class="btn btn-primary mainbuttons">SEARCH</button>&nbsp;&nbsp;&nbsp;
+    <button routerLink="/adverts" class="btn btn-primary mainbuttons">PLACE AD</button>
+  </div>
+
+<br>
+ 
+
+
+
+  </form>
+</div>
+
+<h1 class="text-center" *ngIf="carData">Adverts</h1>
+
+  <div class="container row text-center mx-auto containerborder" *ngIf="carData">
+
+  <div class="card text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" *ngIf="carData">
+    <div class="card-header">
+      
+    </div>
+    <div class="card-body" id="Evo">
+      <h5 class="card-title"> {{carData.listings[0]?.build?.make}} {{carData.listings[0]?.build?.model}} {{carData.listings[0]?.build?.year}} </h5>
+          <img src="{{carData.listings[0]?.media?.photo_links[0]}}" alt="Image of automotive art - EVO7." height = 250em; width = 350em;/>
+          <br><br>
+          <p class="card-text">Miles: {{carData.listings[0]?.miles}} 
+            <br>
+            Engine: {{carData.listings[0]?.build?.engine}}
+          </p>
+        <span class="shop-item-price">Price: {{carData.listings[0]?.price | currency: "€"}}</span>
+         
+    </div>
+  </div>
+
+
+  
+
+  <div class="card text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" *ngIf="carData">
+    <div class="card-header">
+      
+    </div>
+    <div class="card-body" id="Evo">
+      <h5 class="card-title"> {{carData.listings[1]?.build?.make}} {{carData.listings[1]?.build?.model}} {{carData.listings[1]?.build?.year}} </h5>
+          <img src="{{carData.listings[1]?.media?.photo_links[0]}}" alt="Image of automotive art - EVO7." height = 250em; width = 350em;/>
+          <br><br>
+          <p class="card-text">Miles: {{carData.listings[1]?.miles}} 
+            <br>
+            Engine: {{carData.listings[1]?.build?.engine}}
+          </p>
+        <span class="shop-item-price">Price: {{carData.listings[1]?.price | currency: "€"}}</span>
+         
+    </div>
+  </div>
+
+
+
+
+  <div class="card text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" *ngIf="carData">
+    <div class="card-header">
+      
+    </div>
+    <div class="card-body" id="Evo">
+      <h5 class="card-title"> {{carData.listings[2]?.build?.make}} {{carData.listings[2]?.build?.model}} {{carData.listings[2]?.build?.year}} </h5>
+          <img src="{{carData.listings[2]?.media?.photo_links[0]}}" alt="Image of automotive art - EVO7." height = 250em; width = 350em;/>
+          <br><br>
+          <p class="card-text">Miles: {{carData.listings[2]?.miles}} 
+            <br>
+            Engine: {{carData.listings[2]?.build?.engine}}
+          </p>
+        <span class="shop-item-price">Price: {{carData.listings[2]?.price | currency: "€"}}</span>
+         
+    </div>
+  </div>
+
+
+<div class="card text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" *ngIf="carData">
+    <div class="card-header">
+      
+    </div>
+  <div class="card-body" id="Evo">
+    <h5 class="card-title"> {{carData.listings[3]?.build?.make}} {{carData.listings[3]?.build?.model}} {{carData.listings[1]?.build?.year}} </h5>
+        <img src="{{carData.listings[3]?.media?.photo_links[0]}}" alt="Image of automotive art - EVO7." height = 250em; width = 350em;/>
+        <br><br>
+        <p class="card-text">Miles: {{carData.listings[3]?.miles}} 
+          <br>
+          Engine: {{carData.listings[3]?.build?.engine}}
+        </p>
+      <span class="shop-item-price">Price: {{carData.listings[3]?.price | currency: "€"}}</span>
+       
+  </div>
+</div>
+
+
+
+  
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+  
+  
+

@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #323039; }
+
+    .lol {
+        width: 10em;
+        
+    }
+
+    @media screen and (max-width: 800px) {
+      .lol{width: 20%;
+      font-size: 60%;}
+
+      .mainbuttons{width: 80%;
+        font-size: 60%;
+      }
+  }
+
+  @media screen and (min-width: 900px) {
+    .lol{width: 10em;
+  }
+
+    .mainbuttons{width: 8.06em;}
+}
+
+    .advertImages {
+      width: 15em;
+    }
+
+    .advertText {
+      font-size: 1.2em;
+      float: right;
+    }
+
+    .logo {
+      width: 200px;
+      float: left;
+    }
+
+    .formbuttonz {
+width: 30em;
+    }
+
+    .mainbuttons {
+      background-color: springgreen;
+      width: 8.06em;
+      border:1px solid black;
+      
+
+    }
+    .containerborder {
+        border: 1px solid rgb(158, 157, 157);
+    overflow: hidden;
+    padding: 0px 15px 0px 15px;
+    }
+
+    .noborder {
+        border: none;
+    }
+  
+    .card-body {
+    background: #323039;
+    color: white; }
+    .card-body > img {
+      border: 3px solid rgb(255, 136, 25); }
+  
+  .card-header {
+    background: #323039;
+    color: white;
+    border: none;
+    display: inline; }
+    .card-header > img {
+      display: inline-block; }
+  
+ 
+  
+  h1 {
+    font-family: "Freestyle Script";
+    color: white;
+    font-size: 5em; }
+
+  .card {
+    background: #323039;
+border: none; }
+  
+  
+  
+  #img1, .image {
+    outline: 3px solid white;
+    border: 2px #323039;
+    background: #323039; }
+  
+  p.text-center {
+    color: white; }
+  
+  .quantity, .product-info, .summary, .summary-item, .price, .formo, .loginz, .userdetailz {
+    color: white; }
+  

@@ -1,0 +1,30 @@
+
+<h1 class="text-center">Your Adverts</h1>
+
+<div class='container'>
+    <div class='row border'>
+        <div class="col-xs-3 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <br>
+            <img src="{{carData.imageURL}}" class="advertImages"/>
+            <br>
+            <br>
+            
+        </div>
+        <div class="col-3 formo col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <br>
+            <br>
+           <h3 class="advertText"> MAKE: <br>{{carData.make}} </h3>
+        </div>
+        <div class="col-3 formo col-xs-3 col-sm-2 col-md-3 col-lg-3 col-xl-3">
+            <br>
+            <br>
+            <h3 class="advertText"> MODEL:     <br>   {{carData.model}} </h3>
+        </div>
+        <div class="col-3 formo col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <br>
+            <br>
+         <h3 class="advertText">PRICE:  <br> {{carData.price | currency: "€"}} </h3>
+        </div>
+        
+    </div>
+    </div>
